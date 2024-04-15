@@ -1,0 +1,77 @@
+body {
+    margin: none;
+    font-family: "EB Garamond", serif;
+   
+}
+
+
+ul {
+    margin: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10px;
+}
+.div-1 {
+    padding: 0 20px;
+    background-color: black;
+    
+}
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/photo_2024-03-12_19-27-24.jpg);
+    
+    
+}
+.div-1 {
+    display: flex;
+    justify-content: center;
+    height: 67px;
+    line-height: 67px;
+    background-color: black;
+}
+.nav-list li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-list-link {
+    position: relative;
+    transition: all .25s ease;
+}
+.nav-list-link::after {
+    content:"";
+    background: red;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .25s ease;
+}
+.nav-list-link:hover {
+    color: red;
+}
+.nav-list-link:hover::after {
+    transform: scaleX(1);
+}
+.nav-list li:last-of-type a {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color:red;
+    border-radius: 6px;
+    transition: all .25s ease;
+} 
+.nav-list li:last-of-type a:hover{
+    background-color: #c9233a;
+}
+
+
+
